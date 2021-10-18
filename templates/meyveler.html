@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Merhaba </title>
+</head>
+<body>
+
+<ul>
+
+    {% for meyve in meyveler  %}
+       <li> {{meyve}} </li>
+    {% endfor %}
+
+</ul>
+
+{% if 'elma'in meyveler %}
+    <p> Elma listede var </p>
+
+{% else %}
+    <p> Elma listede yok </p>
+{% endif %}
+
+</body>
+</html>
